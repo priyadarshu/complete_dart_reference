@@ -66,7 +66,17 @@ void main() {
   functionexamplewithparam(36);
   int newk = functionreturningvalues(12);
   print('New k value is -> $newk');
+
+  //Object of the class
+  TestValues val = TestValues('Evening', 6);
+
+  print('Good ' + val.timeoftheday + ', its ' + val.hours.toString() + 'pm');
+  //
 }
+//
+//
+// function example
+//
 
 void functionexample() {
   print('Example of a function');
@@ -82,4 +92,14 @@ void functionexamplewithparam(paramvalue) {
 int functionreturningvalues(int k) {
   print('this is k -> $k');
   return k + 1752;
+}
+
+// Classes
+class TestValues {
+  String timeoftheday;
+  int hours;
+
+  // constructor
+
+  TestValues(this.timeoftheday, this.hours);
 }
